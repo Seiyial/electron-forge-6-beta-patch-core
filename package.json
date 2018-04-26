@@ -1,7 +1,7 @@
 {
   "name": "@electron-forge/core",
-  "version": "6.0.0-beta.3",
-  "description": "A complete tool for building modern Electron applications",
+  "version": "6.0.0-beta.3.1",
+  "description": "A complete tool for building modern Electron applications.",
   "repository": "https://github.com/electron-userland/electron-forge",
   "main": "dist/api/index.js",
   "scripts": {
