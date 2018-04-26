@@ -30,7 +30,7 @@ class PluginInterface {
 
         const pluginModule = require(plugin[0]);
 
-        const Plugin = pluginModule.default || pluginModule.PluginCompile || pluginModule;
+        const Plugin = pluginModule.default || pluginModule.CompilePlugin || pluginModule;
 
         // console.log("PLUGIN", Plugin);
         return new Plugin(opts);
