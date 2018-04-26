@@ -23,7 +23,7 @@ function () {
       var _ref2 = _asyncToGenerator(function* (rebuildSpinner) {
         const rebuilder = (0, _electronRebuild.default)(Object.assign({}, config, {
           buildPath,
-          electronVersion,
+          electronVersion: '2.0.0-beta.5',
           arch
         }));
         const lifecycle = rebuilder.lifecycle;

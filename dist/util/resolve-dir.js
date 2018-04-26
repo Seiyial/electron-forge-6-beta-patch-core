@@ -39,13 +39,13 @@ function () {
         const packageJSON = yield (0, _readPackageJson.default)(mDir);
         const electronVersion = (0, _electronVersion.default)(packageJSON);
 
-        if (electronVersion) {
-          if (!/[0-9]/.test(electronVersion[0]) && electionVersion[0] !== 'Seiyial/electron-prebuilt-compile') {
-            throw `You must depend on an EXACT version of electron not a range (${electronVersion})`;
-          }
-        } else {
-          throw 'You must depend on "electron" in your devDependencies';
-        }
+        // if (electronVersion) {
+        //   if (!/[0-9]/.test(electronVersion[0]) && electionVersion[0] !== 'Seiyial/electron-prebuilt-compile') {
+        //     throw `You must depend on an EXACT version of electron not a range (${electronVersion})`;
+        //   }
+        // } else {
+        //   throw 'You must depend on "electron" in your devDependencies';
+        // }
 
         if (packageJSON.config && packageJSON.config.forge) {
           d('electron-forge compatible package.json found in', testPath);
