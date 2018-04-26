@@ -1,0 +1,14 @@
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+var _default = packageJSON => {
+  if (!packageJSON.devDependencies) return null;
+  return packageJSON.devDependencies['electron-prebuilt-compile'] || packageJSON.devDependencies['electron-prebuilt'] || packageJSON.devDependencies.electron;
+};
+
+exports.default = _default;
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uLy4uL3NyYy91dGlsL2VsZWN0cm9uLXZlcnNpb24uanMiXSwibmFtZXMiOlsicGFja2FnZUpTT04iLCJkZXZEZXBlbmRlbmNpZXMiLCJlbGVjdHJvbiJdLCJtYXBwaW5ncyI6Ijs7Ozs7OztlQUFnQkEsV0FBRCxJQUFpQjtBQUM5QixNQUFJLENBQUNBLFlBQVlDLGVBQWpCLEVBQWtDLE9BQU8sSUFBUDtBQUNsQyxTQUFRRCxZQUFZQyxlQUFaLENBQTRCLDJCQUE1QixLQUNERCxZQUFZQyxlQUFaLENBQTRCLG1CQUE1QixDQURDLElBRURELFlBQVlDLGVBQVosQ0FBNEJDLFFBRm5DO0FBR0QsQyIsImZpbGUiOiJlbGVjdHJvbi12ZXJzaW9uLmpzIiwic291cmNlc0NvbnRlbnQiOlsiZXhwb3J0IGRlZmF1bHQgKHBhY2thZ2VKU09OKSA9PiB7XG4gIGlmICghcGFja2FnZUpTT04uZGV2RGVwZW5kZW5jaWVzKSByZXR1cm4gbnVsbDtcbiAgcmV0dXJuIChwYWNrYWdlSlNPTi5kZXZEZXBlbmRlbmNpZXNbJ2VsZWN0cm9uLXByZWJ1aWx0LWNvbXBpbGUnXVxuICAgICAgfHwgcGFja2FnZUpTT04uZGV2RGVwZW5kZW5jaWVzWydlbGVjdHJvbi1wcmVidWlsdCddXG4gICAgICB8fCBwYWNrYWdlSlNPTi5kZXZEZXBlbmRlbmNpZXMuZWxlY3Ryb24pO1xufTtcbiJdfQ==
