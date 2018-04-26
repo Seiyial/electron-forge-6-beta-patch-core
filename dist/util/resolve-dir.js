@@ -40,7 +40,7 @@ function () {
         const electronVersion = (0, _electronVersion.default)(packageJSON);
 
         if (electronVersion) {
-          if (!/[0-9]/.test(electronVersion[0])) {
+          if (!/[0-9]/.test(electronVersion[0]) && electionVersion[0] !== 'Seiyial/electron-prebuilt-compile') {
             throw `You must depend on an EXACT version of electron not a range (${electronVersion})`;
           }
         } else {
