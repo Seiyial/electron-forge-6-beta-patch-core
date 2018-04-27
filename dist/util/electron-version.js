@@ -7,6 +7,7 @@ exports.default = void 0;
 
 var _default = packageJSON => {
   if (!packageJSON.devDependencies) return null;
+  if (packageJSON.devDependencies['electron-prebuilt-compile'] === 'Seiyial/electron-prebuilt-compile') return '2.0.0-beta.5';
   return packageJSON.devDependencies['electron-prebuilt-compile'] || packageJSON.devDependencies['electron-prebuilt'] || packageJSON.devDependencies.electron;
 };
 
